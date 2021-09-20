@@ -75,7 +75,7 @@ class SiteAnalyticsController extends Controller
 
         // charts start
         $userRegistrationChart = app()->chartjs
-            ->name('lineChartTest')
+            ->name('newUserRegistrations')
             ->type('line')
             ->size(['width' => 400, 'height' => 200])
             ->labels($months)

@@ -14,7 +14,6 @@
     </div>
     <form action="{{ route('site-analysis') }}" method="post" class="mb-4">
         @csrf
-
         <div class="flex justify-center">
             <div class="px-4">
                 {!! Form::selectRange('year', 2021, 1900, $year['year']) !!}

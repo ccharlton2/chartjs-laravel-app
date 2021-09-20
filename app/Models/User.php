@@ -43,7 +43,7 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    // Defines the relationship between User and Sports
+    // Defines the relationship between Users and Sports
     public function sports()
     {
         return $this->belongsToMany(
@@ -51,6 +51,17 @@ class User extends Authenticatable
             'sports_users',
             'user_id',
             'sport_id'
+        );
+    }
+
+    // Defines the relationship between Users and Jobs
+    public function jobs()
+    {
+        return $this->belongsToMany(
+            Job::class,
+            'users_jobs',
+            'user_id',
+            'job_id'
         );
     }
 }

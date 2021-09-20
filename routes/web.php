@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChartJsController;
+use App\Http\Controllers\JobController;
 use App\Http\Controllers\SiteAnalyticsController;
 
 /*
@@ -26,6 +27,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/site-analysis', [SiteAnalyticsController::class, 'index'])->name('site-analysis');
     Route::post('/site-analysis', [SiteAnalyticsController::class, 'index']);
+
+    Route::get('/jobs', [JobController::class, 'index'])->name('jobs');
 });
 
 require __DIR__ . '/auth.php';
