@@ -3,6 +3,7 @@
 This projects is a demonstration of visualizing data using [Chart.js](https://www.chartjs.org/docs/latest/), a  lightweight, JavaScript based, data visualization tool.
 
 ## How do I run this locally?
+Please refer to [this](https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/) article that explains how to setup a cloned Laravel project on your local machine.
 
 ## What tools were used to build the project?
 - [Laravel](https://laravel.com/docs/8.x)

@@ -21,6 +21,10 @@ class SiteAnalyticsController extends Controller
         // check if year value was passed
         if ($request->only('year')) {
             $selectedYear = $request->only('year');
+
+            $this->validate($request, [
+                'year' => 'required|integer|min:1900|max:' . date("Y"),
+            ]);
         }
 
         $months = [
